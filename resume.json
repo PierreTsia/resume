@@ -6,7 +6,8 @@
     "image": "https://i.stack.imgur.com/7z1X8.jpg?s=256&g=1",
     "email": "pierre.tsiakkaros@gmail.com",
     "phone": "+33 7 85 16 81 05",
-    "summary": "Highly accomplished and user-focused Front-end Developer adept in collaborating with UX and design teams to plan the technical writing and execution of functional specifications for websites and applications. Experienced in building multi-platform websites using Responsive Web Design/RWD. ",
+    "summary": "Challenge-driven Frontend Developer with 5 years of experience in building and maintaining web applications. Fast learner, passionate, my job is not just 'to write code' but to <u>sustainably</u> deliver <u>business value</u>. I'm a team player and I'm always looking for opportunities to learn and improve. I thrive in multi-cultural and diverse environments, being able to foster communication and collaboration between different teams and stakeholders.",
+
     "location": {
       "postalCode": "75013",
       "city": "Paris",
@@ -19,7 +20,7 @@
         "url": "https://github.com/PierreTsia"
       },
       {
-        "network": "Stackoverflow",
+        "network": "Stack-overflow",
         "username": "Pierre_T",
         "url": "https://stackoverflow.com/users/9043901/pierre-t"
       }
@@ -35,7 +36,17 @@
       "website": "https://ankorstore.com/",
       "startDate": "2022-03-01",
       "summary": "Front-end engineer position...",
-      "highlights": []
+      "highlights": [],
+      "keywords": [
+        "Vue js",
+        "Vuex",
+        "Tailwind",
+        "Vite",
+        "PostgreSQL",
+        "Jest",
+        "Cypress",
+        "Docker"
+      ]
     },
     {
       "name": "Interencheres",
@@ -47,7 +58,13 @@
       "startDate": "2021-01-04",
       "endDate": "2022-03-04",
       "summary": "Front-end engineer position...",
-      "highlights": []
+      "keywords": [
+        "Nuxt",
+        "Vuetify",
+        "Vuex",
+        "Docker",
+        "Websockets"
+      ]
     },
     {
       "name": "Hyperlex",
@@ -59,20 +76,27 @@
       "startDate": "2018-02-01",
       "endDate": "2021-01-01",
       "summary": "Front-end engineer position...",
-      "highlights": []
+      "keywords": [
+        "Vue js",
+        "Graphql"
+      ]
     }
   ],
   "volunteer": [
     {
       "organization": "Konexio",
       "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
+      "website": "https://www.konexio.eu/",
+      "location": {
+        "city": "Paris",
+        "countryCode": "FR"
+      },
+      "city": "Paris, France",
+      "url": "https://www.konexio.eu/",
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "summary": "Through tech training and community building, Konexio promotes the inclusion of refugees and disadvantaged populations in the workforce in France and internationally"
+
     }
   ],
   "education": [
@@ -81,6 +105,10 @@
       "url": "https://wildcodeschool.com/",
       "area": "Web development",
       "studyType": "Bootcamp",
+      "location": {
+        "city": "La Loupe",
+        "countryCode": "Eure-et-Loire, France"
+        },
       "startDate": "2017-09-01",
       "endDate": "2018-02-02",
       "courses": [
@@ -98,6 +126,10 @@
       "studyType": "Master",
       "startDate": "2009-01-01",
       "endDate": "2010-01-01",
+      "location": {
+        "city": "Paris",
+        "countryCode": "Ile-de-France, France"
+      },
       "courses": [
         "Droit de l'urbanisme",
         "Politiques publiques",
@@ -108,10 +140,14 @@
     {
       "institution": "Institut d'Etudes Politiques de Toulouse",
       "url": "http://www.sciencespo-toulouse.fr/",
-      "area": "Master Sciences Politiques",
+      "area": "Sciences Politiques",
       "studyType": "Master",
       "startDate": "1999-01-01",
       "endDate": "2003-01-01",
+      "location": {
+        "city": "Toulouse",
+        "countryCode": "Occitanie, France"
+      },
       "courses": [
         "Sciences Politiques",
         "Droit public",
@@ -123,7 +159,7 @@
   "skills": [
     {
       "name": "Front end",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "HTML",
         "CSS",
@@ -150,7 +186,7 @@
     },
     {
       "name": "DevOps",
-      "level": "Intermediate",
+      "level": "Beginner",
       "keywords": [
         "Docker",
         "Github Actions",
@@ -166,19 +202,45 @@
     },
     {
       "language": "English",
-      "fluency": "Professional working proficiency"
+      "fluency": "Fluent"
     },
     {
       "language": "Greek",
-      "fluency": "Basic working proficiency"
+      "fluency": "Intermediate"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Software engineering",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Craftsmanship",
+        "DDD",
+        "TDD",
+        "Clean code",
+        "Design patterns"
+      ]
+    },
+    {
+      "name": "Politics",
+      "keywords": [
+        "Environment",
+        "Inclusion and diversity",
+        "Social studies"
+      ]
+    },
+    {
+      "name": "Tech",
+      "keywords": [
+        "AI",
+        "Blockchain"
+      ]
+    },
+    {
+      "name": "Arts",
+      "keywords": [
+        "Literature",
+        "Hip hop",
+        "Street art"
       ]
     }
   ],
