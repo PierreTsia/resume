@@ -35,7 +35,7 @@
       "url": "http://ankorstore.com",
       "website": "https://ankorstore.com/",
       "startDate": "2022-03-01",
-      "summary": "Front-end engineer position...",
+      "summary": "Within Retailer XP tribe and Reorder XP squad, working closely with product managers, designers, data analyst and backend developers to deliver, test and enhance features facilitating ordering/reordering experience for retailers.",
       "highlights": [],
       "keywords": [
         "Vue js",
@@ -57,7 +57,7 @@
       "website": "https://www.interencheres.com/",
       "startDate": "2021-01-04",
       "endDate": "2022-03-04",
-      "summary": "Front-end engineer position...",
+      "summary": "Development and maintenance of interencheres.com, the number 1  live platform for auction sales with more than 3 millions items sold every year and +550 M € of live adjudications in 2021.",
       "keywords": [
         "Nuxt",
         "Vuetify",
@@ -75,10 +75,61 @@
       "website": "https://hyperlex.ai/",
       "startDate": "2018-02-01",
       "endDate": "2021-01-01",
-      "summary": "Front-end engineer position...",
+      "summary": "Development and maintenance of a ai-powered Saas platform for legal documents generation and management.",
       "keywords": [
         "Vue js",
-        "Graphql"
+        "Graphql",
+        "Vuex",
+        "Jest"
+      ]
+    },
+    {
+      "name": "Ville de Fontainebleau",
+      "location": "Fontainebleau (77)",
+      "description": "Ville de Fontainebleau, Directeur de cabinet du Maire, Conseiller régional, Président de l'ex-Communauté de Communes du Pays de Fontainebleau. ",
+      "position": "Directeur de cabinet",
+      "url": "https://www.fontainebleau.fr/",
+      "website": "https://www.fontainebleau.fr/",
+      "startDate": "2016-04-01",
+      "endDate": "2017-04-01",
+      "summary": "Stratégie politique, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques, management du service Cabinet du Maire & Protocole.",
+      "keywords": [
+        "Communication",
+        "Strategy",
+        "Management",
+        "Public policy"
+      ]
+    },
+    {
+      "name": "Ville de Bry sur Marne",
+      "location": "Bry sur Marne (94)",
+      "description": "Communication et des Relations Publiques du Maire, Conseiller régional, Administrateur du STIF (Syndicat des Transports d’Ile-de-France), 1er Vice-président du syndicat de l’ACTEP (Association des Collectivités de l’Est Parisien). ",
+      "position": "Chargé de la Communication et des Relations Publiques",
+      "url": "https://www.brysurmarne.fr/",
+      "website": "https://www.brysurmarne.fr/",
+      "startDate": "2018-02-01",
+      "endDate": "2021-01-01",
+      "summary": "Stratégie, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques.",
+      "keywords": [
+        "Communication",
+        "Strategy",
+        "Public policy"
+      ]
+    },
+    {
+      "name": "Ville de Roanne",
+      "location": "Roanne (42)",
+      "description": "",
+      "position": "Chef de cabinet du Maire",
+      "url": "https://www.aggloroanne.fr/",
+      "website": "https://www.aggloroanne.fr/",
+      "startDate": "2011-05-01",
+      "endDate": "2014-07-01",
+      "summary": "Stratégie, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques.",
+      "keywords": [
+        "Communication",
+        "Strategy",
+        "Public policy"
       ]
     }
   ],
@@ -246,8 +297,10 @@
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "Chat GPT-3",
+      "reference": "I am pleased to provide a strong recommendation for Pierre Tsiakkaros, who I had the privilege to employ as a Frontend Developer. Pierre was an exceptional team player and consistently delivered sustainable business value with his work. His five years of experience in building and maintaining web applications has given him a deep understanding of the field, and he always showed a willingness to learn and improve. Pierre is a passionate and fast learner, who is highly motivated to tackle challenges. He excels in multi-cultural and diverse environments, where he fosters communication and collaboration between different teams and stakeholders. His contribution to our team was invaluable and made a significant impact on the success of our projects.\n\nDuring his time at our company, Pierre worked on various projects, demonstrating his proficiency in different technologies such as Vue.js, Nuxt, GraphQL, Vuex, Jest, Tailwind, Vite, PostgreSQL, and Docker. His attention to detail, problem-solving skills, and ability to work under pressure made him an asset to our team.\n\nIn conclusion, I highly recommend Pierre Tsiakkaros as a Frontend Developer. He is a motivated and skilled professional who is always eager to learn and deliver the best possible results."
+
+
     }
   ],
   "meta": {
