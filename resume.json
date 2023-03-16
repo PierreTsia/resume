@@ -3,7 +3,6 @@
   "basics": {
     "name": "Pierre Tsiakkaros",
     "label": "Frontend Developer 👨🏻‍💻",
-    "image": "https://i.stack.imgur.com/7z1X8.jpg?s=256&g=1",
     "email": "pierre.tsiakkaros@gmail.com",
     "phone": "+33 7 85 16 81 05",
     "summary": "Challenge-driven Frontend Developer with 5 years of experience in building and maintaining web applications. Fast learner, passionate, my job is not just 'to write code' but to <u>sustainably</u> deliver <u>business value</u>. I'm a team player and I'm always looking for opportunities to learn and improve. I thrive in multi-cultural and diverse environments, being able to foster communication and collaboration between different teams and stakeholders.",
@@ -18,6 +17,11 @@
         "network": "Github",
         "username": "Pierre_T",
         "url": "https://github.com/PierreTsia"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Pierre Tsiakkaros",
+        "url": "https://www.linkedin.com/in/pierre-tsiakkaros/"
       },
       {
         "network": "Stack-overflow",
@@ -293,14 +297,6 @@
         "Hip hop",
         "Street art"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Chat GPT-3",
-      "reference": "I am pleased to provide a strong recommendation for Pierre Tsiakkaros, who I had the privilege to employ as a Frontend Developer. Pierre was an exceptional team player and consistently delivered sustainable business value with his work. His five years of experience in building and maintaining web applications has given him a deep understanding of the field, and he always showed a willingness to learn and improve. Pierre is a passionate and fast learner, who is highly motivated to tackle challenges. He excels in multi-cultural and diverse environments, where he fosters communication and collaboration between different teams and stakeholders. His contribution to our team was invaluable and made a significant impact on the success of our projects.\n\nDuring his time at our company, Pierre worked on various projects, demonstrating his proficiency in different technologies such as Vue.js, Nuxt, GraphQL, Vuex, Jest, Tailwind, Vite, PostgreSQL, and Docker. His attention to detail, problem-solving skills, and ability to work under pressure made him an asset to our team.\n\nIn conclusion, I highly recommend Pierre Tsiakkaros as a Frontend Developer. He is a motivated and skilled professional who is always eager to learn and deliver the best possible results."
-
-
     }
   ],
   "meta": {
