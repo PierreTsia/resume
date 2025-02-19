@@ -36,7 +36,6 @@
       "location": "Paris",
       "description": "Mirakl is the leading SaaS platform powering enterprise marketplaces, retail media, and dropship solutions. Trusted by 450+ companies worldwide, Mirakl processes over $10B in marketplace transactions and manages 600M+ SKUs.",
       "position": "Senior Front-end engineer",
-
       "website": "https://www.mirakl.com/",
       "startDate": "2023-05-10",
       "company": "Mirakl",
@@ -74,6 +73,7 @@
     },
     {
       "name": "Interencheres",
+      "company": "Interencheres",
       "location": "Paris",
       "description": "Le site N°1 de l'enchère en ligne en France",
       "position": "Développeur Front-end",
@@ -92,6 +92,7 @@
     },
     {
       "name": "Hyperlex",
+      "company": "Hyperlex (now part of Dilistrust)",
       "location": "Paris",
       "description": "AI powered legal tools to digitize and automate all your company's legal activities",
       "position": "Front-end developer",
@@ -109,6 +110,7 @@
     },
     {
       "name": "Ville de Fontainebleau",
+      "company": "Ville de Fontainebleau",
       "location": "Fontainebleau (77)",
       "description": "Ville de Fontainebleau, Directeur de cabinet du Maire, Conseiller régional, Président de l'ex-Communauté de Communes du Pays de Fontainebleau. ",
       "position": "Directeur de cabinet",
@@ -126,6 +128,7 @@
     },
     {
       "name": "Ville de Bry sur Marne",
+      "company": "Ville de Bry sur Marne",
       "location": "Bry sur Marne (94)",
       "description": "Communication et des Relations Publiques du Maire, Conseiller régional, Administrateur du STIF (Syndicat des Transports d'Ile-de-France), 1er Vice-président du syndicat de l'ACTEP (Association des Collectivités de l'Est Parisien). ",
       "position": "Chargé de la Communication et des Relations Publiques",
@@ -142,6 +145,7 @@
     },
     {
       "name": "Ville de Roanne",
+      "company": "Ville de Roanne",
       "location": "Roanne (42)",
       "description": "",
       "position": "Chef de cabinet du Maire",
