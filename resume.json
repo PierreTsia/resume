@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Pierre Tsiakkaros",
-    "label": "Frontend Developer 👨🏻‍💻",
+    "label": "Frontend Engineer 👨🏻‍💻",
     "email": "pierre.tsiakkaros@gmail.com",
     "phone": "+33 7 85 16 81 05",
-    "summary": "Challenge-driven Frontend Developer with 5 years of experience in building and maintaining web applications. Fast learner, passionate, my job is not just 'to write code' but to <u>sustainably</u> deliver <u>business value</u>. I'm a team player and I'm always looking for opportunities to learn and improve. I thrive in multi-cultural and diverse environments, being able to foster communication and collaboration between different teams and stakeholders.",
+    "summary": "Challenge-driven Frontend Engineer with 8+ years of experience in building and maintaining web applications. Fast learner, passionate, my job is not just 'to write code' but to <u>sustainably</u> deliver <u>business value</u>. I'm a team player and I'm always looking for opportunities to learn and improve. I thrive in multi-cultural and diverse environments, being able to foster communication and collaboration between different teams and stakeholders.",
 
     "location": {
       "postalCode": "75013",
