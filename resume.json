@@ -36,7 +36,7 @@
       "location": "Paris",
       "description": "Mirakl is the leading SaaS platform powering enterprise marketplaces, retail media, and dropship solutions. Trusted by 450+ companies worldwide, Mirakl processes over $10B in marketplace transactions and manages 600M+ SKUs.",
       "position": "Senior Front-end engineer",
-      "url": "https://www.mirakl.com/",
+
       "website": "https://www.mirakl.com/",
       "startDate": "2024-02-19",
       "company": "Mirakl",
@@ -51,6 +51,7 @@
     },
     {
       "name": "Ankorstore",
+      "company": "Ankorstore",
       "location": "Remote",
       "description": "Ankorstore is an ecosystem that enables independent brands and retailers to thrive. We're on a mission to rewild retail and restore it to its natural order by returning independents to where they belong – the heart of their communities.",
       "position": "Front-end engineer",
