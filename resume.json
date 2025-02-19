@@ -32,6 +32,24 @@
   },
   "work": [
     {
+      "name": "Mirakl",
+      "location": "Paris",
+      "description": "Mirakl is the leading SaaS platform powering enterprise marketplaces, retail media, and dropship solutions. Trusted by 450+ companies worldwide, Mirakl processes over $10B in marketplace transactions and manages 600M+ SKUs.",
+      "position": "Front-end engineer",
+      "url": "https://www.mirakl.com/",
+      "website": "https://www.mirakl.com/",
+      "startDate": "2024-02-19",
+      "endDate": "Current",
+      "summary": "Working on Mirakl Ads, a cutting edge retail media solution that enables personalized onsite advertising and revenue optimization for marketplace operators.",
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Jest",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
       "name": "Ankorstore",
       "location": "Remote",
       "description": "Ankorstore is an ecosystem that enables independent brands and retailers to thrive. We’re on a mission to rewild retail and restore it to its natural order by returning independents to where they belong – the heart of their communities.",
@@ -39,6 +57,7 @@
       "url": "http://ankorstore.com",
       "website": "https://ankorstore.com/",
       "startDate": "2022-03-01",
+      "endDate": "2023-05-01",
       "summary": "Within Retailer XP tribe and Reorder XP squad, working closely with product managers, designers, data analyst and backend developers to deliver, test and enhance features facilitating ordering/reordering experience for retailers.",
       "highlights": [],
       "keywords": [
@@ -220,6 +239,8 @@
         "CSS",
         "Javascript",
         "Typescript",
+        "React",
+        "Next js",
         "Vue js",
         "Nuxt js",
         "Tailwind",
