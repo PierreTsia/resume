@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>Pierre Tsiakkaros</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
   /********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
@@ -190,10 +189,6 @@ em {
   color: #757575;
 }
 
-blockquote {
-  margin-bottom: 1em;
-}
-
 strong {
   font-weight: 700;
 }
@@ -266,10 +261,13 @@ section .location {
   border-radius: 4px;
 }
 
+.section.summary header {
+  margin-top: 1rem;
+}
+
 .main-summary {
   background: #f1f8ff;
   padding: 1.2em 1em;
-  margin-top: 1rem;
 }
 
 .main-summary p {
@@ -569,11 +567,12 @@ section .location {
 
 #references .item {
   padding-left: 0.5em;
+  margin-bottom: 1em;
   border-left: 5px solid #ff6d1f;
 }
 
 .section > section > section {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /******************
@@ -649,8 +648,14 @@ section .location {
 }
 
 @media print {
-  a:not(.hide-href-print)::after{
+  #profiles a:not(.hide-href-print)::after{
     content: " (" attr(href) ") ";
+  }
+  #profiles .url .show-only-url-print {
+    display: none;
+  }
+  #profiles .url a::after {
+    content: attr(href);
   }
   #resume {
     margin: 0.1em;
@@ -664,6 +669,9 @@ section .location {
   }
   .item-count {
     display: none;
+  }
+  .company a {
+    color: #40484f;
   }
   .company::before,
   .institution::before,
@@ -686,7 +694,8 @@ section .location {
     padding-bottom: 0.15rem;
   }
   .section > section > section {
-    margin: 0 0 1em 0;
+    border-bottom: 1px solid #fdfdfd;
+    margin: .5em 0;
   }
   .section > section > section:last-of-type {
     margin: 0;
@@ -714,7 +723,7 @@ section .location {
   ul.keywords li::after,
   ul.courses li::after {
     padding: 0 0 0 0.1rem;
-    content: " |";
+    content: ", ";
   }
   ul.keywords::before,
   ul.courses::before {
@@ -722,14 +731,28 @@ section .location {
     font-weight: 600;
   }
   #skills .item {
-    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0;
     padding: 0;
+  }
+  #skills .level {
+    margin: 0.1rem 0;
+    font-weight: 400;
+  }
+  #skills .keywords {
+    font-size: 0.9rem;
+    margin: 0;
   }
   .highlights {
     margin: 0.5em 0 0 0;
   }
+  .highlights > li > p {
+    margin-bottom: 0.3em;
+  }
   ul.keywords::before {
-    content: "Skills acquired: ";
+    content: "Skills: ";
+    font-size: 1rem;
   }
   #skills .keywords::before {
     content: none;
@@ -740,6 +763,12 @@ section .location {
   }
   ul.courses::before {
     content: "Major courses: ";
+    font-size: 1rem;
+  }
+  ul.keywords li,
+  ul.courses li {
+    font-size: 1rem;
+    line-height: inherit;
   }
   ul.keywords li:last-of-type::after,
   ul.courses li:last-of-type::after {
@@ -759,7 +788,7 @@ section .location {
     display: block;
     opacity: 1 !important;
   }
-  .fa-map-marker-alt:before {
+  .fa-location-dot:before {
     padding-left: 0.1em;
   }
 }
@@ -779,17 +808,17 @@ section .location {
     		<span class="location">
     			<span class="postalCode">75013,</span>
     			<span class="city">Paris,</span>
-    			<span class="countryCode">FR</span>
+    			<span class="countryCode">(FR)</span>
     		</span>
     
     
     		<div id="contact">
     			<div class="email">
-    				<span class="far fa-envelope"></span>
+    				<span class="fa-regular fa-envelope"></span>
     				<a class="hide-href-print" href="mailto:pierre.tsiakkaros@gmail.com">pierre.tsiakkaros@gmail.com</a>
     			</div>
     			<div class="phone">
-    				<span class="fas fa-mobile-alt"></span>
+    				<span class="fa-solid fa-mobile-screen-button"></span>
     				<a class="hide-href-print" href="tel:+33 7 85 16 81 05">+33 7 85 16 81 05</a>
     			</div>
     		</div>
@@ -797,123 +826,161 @@ section .location {
     		<div id="profiles">
     			<div class="item">
     				<div class="username">
-    					<span class="fab fa-github github social"></span>
+    					<span class="fa-brands fa-github github social"></span>
     					<span class="url">
-    						<a target="_blank" href="https://github.com/PierreTsia">Pierre_T</a>
+    						<a target="_blank" href="https://github.com/PierreTsia"><span class="show-only-url-print">Pierre_T</span></a>
     					</span>
     				</div>
     			</div>
     			<div class="item">
     				<div class="username">
-    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="fa-brands fa-linkedin linkedin social"></span>
     					<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/pierre-tsiakkaros/">Pierre Tsiakkaros</a>
+    						<a target="_blank" href="https://www.linkedin.com/in/pierre-tsiakkaros/"><span class="show-only-url-print">Pierre Tsiakkaros</span></a>
     					</span>
     				</div>
     			</div>
     			<div class="item">
     				<div class="username">
-    					<span class="fab fa-stack-overflow stack-overflow social"></span>
+    					<span class="fa-brands fa-stack-overflow stack-overflow social"></span>
     					<span class="url">
-    						<a target="_blank" href="https://stackoverflow.com/users/9043901/pierre-t">Pierre_T</a>
+    						<a target="_blank" href="https://stackoverflow.com/users/9043901/pierre-t"><span class="show-only-url-print">Pierre_T</span></a>
     					</span>
     				</div>
     			</div>
     		</div>
     	</header>
     
-    	<section class="section">
+    	<section class="section summary">
+        <header>
+          <h2 class="section-title">summary</h2>
+        </header>
     		<section class="main-summary">
-    			<div><p>Challenge-driven Frontend Developer with 5 years of experience in building and maintaining web applications. Fast learner, passionate, my job is not just 'to write code' but to <u>sustainably</u> deliver <u>business value</u>. I'm a team player and I'm always looking for opportunities to learn and improve. I thrive in multi-cultural and diverse environments, being able to foster communication and collaboration between different teams and stakeholders.</p></div>
+    			<div><p><p>Challenge-driven Frontend Developer with 5 years of experience in building and maintaining web applications. Fast learner, passionate, my job is not just 'to write code' but to &lt;u&gt;sustainably&lt;/u&gt; deliver &lt;u&gt;business value&lt;/u&gt;. I'm a team player and I'm always looking for opportunities to learn and improve. I thrive in multi-cultural and diverse environments, being able to foster communication and collaboration between different teams and stakeholders.</p></p></div>
     		</section>
     	</section>
     
     <section class="section">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				Front end
-    			</h3>
-    			 
-    			<div class="level advanced">
-    				<em>Advanced</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>HTML</li>
-    				<li>CSS</li>
-    				<li>Javascript</li>
-    				<li>Typescript</li>
-    				<li>Vue js</li>
-    				<li>Nuxt js</li>
-    				<li>Tailwind</li>
-    				<li>Vite</li>
-    				<li>Jest</li>
-    				<li>Cypress</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Back end
-    			</h3>
-    			 
-    			<div class="level intermediate">
-    				<em>Intermediate</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Node js</li>
-    				<li>Express</li>
-    				<li>MongoDB</li>
-    				<li>PostgreSQL</li>
-    				<li>Nest js</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				DevOps
-    			</h3>
-    			 
-    			<div class="level beginner">
-    				<em>Beginner</em>
-    				<div class="bar"></div>
-    			</div>
-    			<ul class="keywords">
-    				<li>Docker</li>
-    				<li>Github Actions</li>
-    				<li>AWS</li>
-    				<li>GCP</li>
-    			</ul>
-    		</div>
-    	</section>
+      <header>
+        <h2 class='section-title'>Skills</h2>
+      </header>
+      <section id="skills">
+        <div class="item">
+          <h3 class="name">
+            Front end
+          </h3>
+            <div class="level advanced">
+                <em>Advanced</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>React</li>
+            <li>Next js</li>
+            <li>Vue js</li>
+            <li>Nuxt js</li>
+            <li>Tailwind</li>
+            <li>Vite</li>
+            <li>Jest</li>
+            <li>Cypress</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Back end
+          </h3>
+            <div class="level intermediate">
+                <em>Intermediate</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>Node js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Nest js</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            DevOps
+          </h3>
+            <div class="level beginner">
+                <em>Beginner</em>
+              <div class="bar"></div>
+            </div>
+          <ul class="keywords">
+            <li>Docker</li>
+            <li>Github Actions</li>
+            <li>AWS</li>
+            <li>GCP</li>
+          </ul>
+        </div>
+      </section>
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
+        <h2 class='section-title'>Work Experience <span class="item-count">(7)</span></h2>
       </header>
     
       <section id="work">
         <section class="work-item">
+            <label for="work-item-0"></label>
     
-          <label for="work-item-0"></label>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Feb 2024</span>
+                <span class="endDate">- Invalid date</span>
+              </div>
+              <div class="position">Front-end engineer</div>
+                <span class="company">
+                  <a target="_blank" href="https://www.mirakl.com/"></a>
+                </span>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Mar 2022</span>
-              <span class="endDate">- Current</span>
-            </div>
-            <div class="position">Front-end engineer</div>
-            <div class="company">Ankorstore</div>
-          </header>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Paris
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="https://www.mirakl.com/">https://www.mirakl.com/</a>
+          </span>  
+          <ul class="keywords">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Jest</li>
+            <li>Docker</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <div class="item" id="work-item">
+            <div class="summary"><p><p>Working on Mirakl Ads, a cutting edge retail media solution that enables personalized onsite advertising and revenue optimization for marketplace operators.</p></p></div>
+          </div>
+        </section>
+        <section class="work-item">
+            <label for="work-item-1"></label>
     
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Remote,</span>
-          <span class="website">
-            <span class="fas fa-external-link-alt"></span>
-            <a target="_blank" href="https://ankorstore.com/">https://ankorstore.com/</a>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Mar 2022</span>
+                <span class="endDate">- May 2023</span>
+              </div>
+              <div class="position">Front-end engineer</div>
+                <span class="company">
+                  <a target="_blank" href="https://ankorstore.com/"></a>
+                </span>
+            </header>
+    
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Remote
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
+            <a target="_blank" href="http://ankorstore.com">http://ankorstore.com</a>
           </span>  
           <ul class="keywords">
             <li>Vue js</li>
@@ -926,26 +993,29 @@ section .location {
             <li>Docker</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p>Within Retailer XP tribe and Reorder XP squad, working closely with product managers, designers, data analyst and backend developers to deliver, test and enhance features facilitating ordering/reordering experience for retailers.</p></div>
+            <div class="summary"><p><p>Within Retailer XP tribe and Reorder XP squad, working closely with product managers, designers, data analyst and backend developers to deliver, test and enhance features facilitating ordering/reordering experience for retailers.</p></p></div>
           </div>
         </section>
         <section class="work-item">
+            <label for="work-item-2"></label>
     
-          <label for="work-item-1"></label>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Jan 2021</span>
+                <span class="endDate">- Mar 2022</span>
+              </div>
+              <div class="position">Développeur Front-end</div>
+                <span class="company">
+                  <a target="_blank" href="https://www.interencheres.com/"></a>
+                </span>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Jan 2021</span>
-              <span class="endDate">- Mar 2022</span>
-            </div>
-            <div class="position">Développeur Front-end</div>
-            <div class="company">Interencheres</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Paris,</span>
-          <span class="website">
-            <span class="fas fa-external-link-alt"></span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Paris
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.interencheres.com/">https://www.interencheres.com/</a>
           </span>  
           <ul class="keywords">
@@ -956,26 +1026,29 @@ section .location {
             <li>Websockets</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p>Development and maintenance of interencheres.com, the number 1  live platform for auction sales with more than 3 millions items sold every year and +550 M € of live adjudications in 2021.</p></div>
+            <div class="summary"><p><p>Development and maintenance of interencheres.com, the number 1  live platform for auction sales with more than 3 millions items sold every year and +550 M € of live adjudications in 2021.</p></p></div>
           </div>
         </section>
         <section class="work-item">
+            <label for="work-item-3"></label>
     
-          <label for="work-item-2"></label>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Feb 2018</span>
+                <span class="endDate">- Jan 2021</span>
+              </div>
+              <div class="position">Front-end developer</div>
+                <span class="company">
+                  <a target="_blank" href="https://hyperlex.ai/"></a>
+                </span>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Feb 2018</span>
-              <span class="endDate">- Jan 2021</span>
-            </div>
-            <div class="position">Front-end developer</div>
-            <div class="company">Hyperlex</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Paris,</span>
-          <span class="website">
-            <span class="fas fa-external-link-alt"></span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Paris
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://hyperlex.ai/">https://hyperlex.ai/</a>
           </span>  
           <ul class="keywords">
@@ -985,26 +1058,29 @@ section .location {
             <li>Jest</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p>Development and maintenance of a ai-powered Saas platform for legal documents generation and management.</p></div>
+            <div class="summary"><p><p>Development and maintenance of a ai-powered Saas platform for legal documents generation and management.</p></p></div>
           </div>
         </section>
         <section class="work-item">
+            <label for="work-item-4"></label>
     
-          <label for="work-item-3"></label>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Apr 2016</span>
+                <span class="endDate">- Apr 2017</span>
+              </div>
+              <div class="position">Directeur de cabinet</div>
+                <span class="company">
+                  <a target="_blank" href="https://www.fontainebleau.fr/"></a>
+                </span>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Apr 2016</span>
-              <span class="endDate">- Apr 2017</span>
-            </div>
-            <div class="position">Directeur de cabinet</div>
-            <div class="company">Ville de Fontainebleau</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Fontainebleau (77),</span>
-          <span class="website">
-            <span class="fas fa-external-link-alt"></span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Fontainebleau (77)
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.fontainebleau.fr/">https://www.fontainebleau.fr/</a>
           </span>  
           <ul class="keywords">
@@ -1014,26 +1090,29 @@ section .location {
             <li>Public policy</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p>Stratégie politique, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques, management du service Cabinet du Maire & Protocole.</p></div>
+            <div class="summary"><p><p>Stratégie politique, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques, management du service Cabinet du Maire &amp; Protocole.</p></p></div>
           </div>
         </section>
         <section class="work-item">
+            <label for="work-item-5"></label>
     
-          <label for="work-item-4"></label>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">Feb 2018</span>
+                <span class="endDate">- Jan 2021</span>
+              </div>
+              <div class="position">Chargé de la Communication et des Relations Publiques</div>
+                <span class="company">
+                  <a target="_blank" href="https://www.brysurmarne.fr/"></a>
+                </span>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">Feb 2018</span>
-              <span class="endDate">- Jan 2021</span>
-            </div>
-            <div class="position">Chargé de la Communication et des Relations Publiques</div>
-            <div class="company">Ville de Bry sur Marne</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Bry sur Marne (94),</span>
-          <span class="website">
-            <span class="fas fa-external-link-alt"></span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Bry sur Marne (94)
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.brysurmarne.fr/">https://www.brysurmarne.fr/</a>
           </span>  
           <ul class="keywords">
@@ -1042,26 +1121,29 @@ section .location {
             <li>Public policy</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p>Stratégie, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques.</p></div>
+            <div class="summary"><p><p>Stratégie, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques.</p></p></div>
           </div>
         </section>
         <section class="work-item">
+            <label for="work-item-6"></label>
     
-          <label for="work-item-5"></label>
+            <header class="clear">
+              <div class="date">
+                <span class="startDate">May 2011</span>
+                <span class="endDate">- Jul 2014</span>
+              </div>
+              <div class="position">Chef de cabinet du Maire</div>
+                <span class="company">
+                  <a target="_blank" href="https://www.aggloroanne.fr/"></a>
+                </span>
+            </header>
     
-          <header class="clear">
-            <div class="date">
-              <span class="startDate">May 2011</span>
-              <span class="endDate">- Jul 2014</span>
-            </div>
-            <div class="position">Chef de cabinet du Maire</div>
-            <div class="company">Ville de Roanne</div>
-          </header>
-    
-          <span class="fas fa-map-marker-alt"></span>
-          <span class="location">Roanne (42),</span>
-          <span class="website">
-            <span class="fas fa-external-link-alt"></span>
+          <span class="location">
+            <span class="fa-solid fa-location-dot"></span>
+            Roanne (42)
+          </span>
+          <span class="url">
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.aggloroanne.fr/">https://www.aggloroanne.fr/</a>
           </span>  
           <ul class="keywords">
@@ -1070,7 +1152,7 @@ section .location {
             <li>Public policy</li>
           </ul>
           <div class="item" id="work-item">
-            <div class="summary"><p>Stratégie, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques.</p></div>
+            <div class="summary"><p><p>Stratégie, communication publique et institutionnelle, élaboration, suivi et évaluation des politiques publiques.</p></p></div>
           </div>
         </section>
       </section>
@@ -1085,6 +1167,14 @@ section .location {
           <label for="volunteer-item-0"></label>
     
           <header class="clear">
+             <div class="date">
+              <span class="startDate">
+                Jan 2019
+              </span>
+              <span class="endDate">
+                - Jan 2020
+              </span>
+            </div>
             <div class="header-left">
               <div class="position">
                 Teacher
@@ -1093,21 +1183,14 @@ section .location {
                 Konexio
               </div>
             </div>
-            <div class="date">
-              <span class="startDate">
-                Jan 2019
-              </span>
-              <span class="endDate">
-                - Jan 2020
-              </span>
-            </div>
+           
           </header>
           <div class="website">
-            <span class="fas fa-external-link-alt"></span>
+            <span class="fa-solid fa-up-right-from-square"></span>
             <a target="_blank" href="https://www.konexio.eu/">https://www.konexio.eu/</a>
           </div>
           <span class="location">
-            <span class="fas fa-map-marker-alt"></span>
+            <span class="fa-solid fa-location-dot"></span>
             <span class="city">
               Paris,
             </span>
@@ -1116,7 +1199,7 @@ section .location {
             </span>
           </span>
           <div class="item">
-            <div class="summary"><p>Through tech training and community building, Konexio promotes the inclusion of refugees and disadvantaged populations in the workforce in France and internationally</p></div>
+            <div class="summary"><p><p>Through tech training and community building, Konexio promotes the inclusion of refugees and disadvantaged populations in the workforce in France and internationally</p></p></div>
           </div>
         </section>
       </section>
@@ -1129,6 +1212,14 @@ section .location {
       <section id="education">
         <section class="education-item">
           <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2017
+              </span>
+              <span class="endDate">
+              - 2018
+              </span>
+            </div>
             <div class="header-left">
               <div class="studyType">
                 Bootcamp
@@ -1140,18 +1231,10 @@ section .location {
                 Wild Code School
               </div>
             </div>
-            <div class="date">
-              <span class="startDate">
-              2017
-              </span>
-              <span class="endDate">
-              - 2018
-              </span>
-            </div>
           </header>
     
           <span class="location">
-            <span class="fas fa-map-marker-alt"></span>
+            <span class="fa-solid fa-location-dot"></span>
             <span class="city">La Loupe</span>
             <span class="countryCode">(Eure-et-Loire, France)</span>
           </span>
@@ -1169,6 +1252,14 @@ section .location {
         </section>
         <section class="education-item">
           <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2009
+              </span>
+              <span class="endDate">
+              - 2010
+              </span>
+            </div>
             <div class="header-left">
               <div class="studyType">
                 Master
@@ -1180,18 +1271,10 @@ section .location {
                 Université Paris Diderot
               </div>
             </div>
-            <div class="date">
-              <span class="startDate">
-              2009
-              </span>
-              <span class="endDate">
-              - 2010
-              </span>
-            </div>
           </header>
     
           <span class="location">
-            <span class="fas fa-map-marker-alt"></span>
+            <span class="fa-solid fa-location-dot"></span>
             <span class="city">Paris</span>
             <span class="countryCode">(Ile-de-France, France)</span>
           </span>
@@ -1208,6 +1291,14 @@ section .location {
         </section>
         <section class="education-item">
           <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              1999
+              </span>
+              <span class="endDate">
+              - 2003
+              </span>
+            </div>
             <div class="header-left">
               <div class="studyType">
                 Master
@@ -1219,18 +1310,10 @@ section .location {
                 Institut d&#x27;Etudes Politiques de Toulouse
               </div>
             </div>
-            <div class="date">
-              <span class="startDate">
-              1999
-              </span>
-              <span class="endDate">
-              - 2003
-              </span>
-            </div>
           </header>
     
           <span class="location">
-            <span class="fas fa-map-marker-alt"></span>
+            <span class="fa-solid fa-location-dot"></span>
             <span class="city">Toulouse</span>
             <span class="countryCode">(Occitanie, France)</span>
           </span>
